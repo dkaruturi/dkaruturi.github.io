@@ -31,6 +31,7 @@ file_put_contents("messages.txt", $message, FILE_APPEND);
 file_put_contents("messages.txt", "\n", FILE_APPEND);
 file_put_contents("messages.txt", "\n", FILE_APPEND);
 
+echo "hello";
 //
 // // Create the email and send the message
 // $to = 'divya354@yahoo.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
