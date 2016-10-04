@@ -1,4 +1,22 @@
 <?php
+
+
+
+file_put_contents("messages.txt", $_POST['name']), FILE_APPEND);
+file_put_contents("messages.txt", "\n", FILE_APPEND);
+
+file_put_contents("messages.txt", $_POST['email']), FILE_APPEND);
+file_put_contents("messages.txt", "\n", FILE_APPEND);
+
+file_put_contents("messages.txt", $_POST['phone']), FILE_APPEND);
+file_put_contents("messages.txt", "\n", FILE_APPEND);
+
+file_put_contents("messages.txt", $_POST['message']), FILE_APPEND);
+file_put_contents("messages.txt", "\n", FILE_APPEND);
+file_put_contents("messages.txt", "\n", FILE_APPEND);
+
+
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
@@ -18,18 +36,6 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
-file_put_contents("messages.txt", $name, FILE_APPEND);
-file_put_contents("messages.txt", "\n", FILE_APPEND);
-
-file_put_contents("messages.txt", $email_address, FILE_APPEND);
-file_put_contents("messages.txt", "\n", FILE_APPEND);
-
-file_put_contents("messages.txt", $phone, FILE_APPEND);
-file_put_contents("messages.txt", "\n", FILE_APPEND);
-
-file_put_contents("messages.txt", $message, FILE_APPEND);
-file_put_contents("messages.txt", "\n", FILE_APPEND);
-file_put_contents("messages.txt", "\n", FILE_APPEND);
 
 echo "hello";
 //
